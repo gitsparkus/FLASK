@@ -1,6 +1,7 @@
 """
 2) Задача 9
-Создать базовый шаблон для интернет-магазина, содержащий общие элементы дизайна (шапка, меню, подвал), и дочерние шаблоны для страниц категорий товаров и отдельных товаров.
+Создать базовый шаблон для интернет-магазина, содержащий общие элементы дизайна (шапка, меню, подвал), и дочерние
+шаблоны для страниц категорий товаров и отдельных товаров.
 Например, создать страницы "Одежда", "Обувь" и "Куртка", используя базовый шаблон.
 """
 
@@ -39,7 +40,7 @@ def jacket():
                        'tempora voluptate? Architecto asperiores culpa cum delectus dolorem earum enim error, esse, '
                        'hic ipsa, maiores possimus quas saepe sunt tenetur ullam voluptatibus? Aliquid facere iusto '
                        'molestias.'}
-    return render_template('task9/item.html', **context)
+    return render_template('task9/clothes_item.html', **context)
 
 
 @app.route('/clothes/jeans/')
@@ -52,7 +53,7 @@ def jeans():
                        'tempora voluptate? Architecto asperiores culpa cum delectus dolorem earum enim error, esse, '
                        'hic ipsa, maiores possimus quas saepe sunt tenetur ullam voluptatibus? Aliquid facere iusto '
                        'molestias.'}
-    return render_template('task9/item.html', **context)
+    return render_template('task9/clothes_item.html', **context)
 
 
 @app.route('/shoes/')
