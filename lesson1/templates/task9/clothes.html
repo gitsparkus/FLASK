@@ -1,0 +1,11 @@
+{% extends 'task9/base_clothes.html' %}
+
+{% block content %}
+
+    <h3>Вот какая есть одежда:</h3>
+
+    {% for item in clothes %}
+    <a href="{{ item.path }}">{{ item.name }}</a><br>
+    {% endfor %}
+
+{% endblock %}
